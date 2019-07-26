@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios'
 import './App.css';
-
+import Layout from './components/Layout/Layout'
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
 class App extends Component {
 
   state={
@@ -19,8 +20,10 @@ class App extends Component {
     console.log(this.state.post)
 
     return (
-      <div className="App">
-       <h1>Hi I am React</h1>
+      <div>
+      <Layout>
+      <BurgerBuilder/>  
+      </Layout>
       </div>
     );
   }
