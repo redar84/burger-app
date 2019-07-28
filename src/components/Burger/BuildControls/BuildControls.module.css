@@ -1,6 +1,6 @@
-.C{
+.BuildControls{
     widows: 100%;
-    background-color: #cf8fcf;
+    background-color: #cf8f2e;
     display:flex;
     flex-flow:column;
     align-items:center;
