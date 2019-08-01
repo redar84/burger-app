@@ -9,13 +9,6 @@ class App extends Component {
     post:{}
   }
 
-
-  //  componentDidMount(){
-  //       axios.get("https://jsonplaceholder.typicode.com/posts").then((data)=>{
-  //         console.log(data);
-  //         this.setState({post:data});
-  //       })
-  //  }
   render(){
    
 
