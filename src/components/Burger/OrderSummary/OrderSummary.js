@@ -11,11 +11,13 @@ const orderSummary = (props) => {
             </span>
             </li>
     })
+  
     return(
         <Aux>
             <h2>Your Order Summaty</h2>
              <p>You Choose Following Ingredient : </p>
              <ul>{orderSummary}</ul>
+             <p><strong>Your Total : $ {props.price.tofixed(2)}</strong></p>
              <p>Continue to Checkout ?</p>
              <Button btnType="Danger" clicked={props.closeModal}>Cancel</Button>
              <Button btnType="Success" clicked={props.continue}>Continue</Button>
