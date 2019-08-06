@@ -1,0 +1,11 @@
+.DrawerToggle {
+    color: white;
+    font-size: 20px
+}
+
+
+@media (min-width: 500px) {
+    .DrawerToggle {
+        display: none;
+    }
+}
