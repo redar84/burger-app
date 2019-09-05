@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Aux from "../../../hoc/Auxelement";
 import Button from "../../UI/Button/Button";
+import {Link} from 'react-router-dom'
 class OrderSummary extends Component {
   componentWillUpdate(){
       console.log('[OrderSummary] WillUpdate');
@@ -27,9 +28,11 @@ class OrderSummary extends Component {
         <Button btnType="Danger" clicked={this.props.closeModal}>
           Cancel
         </Button>
+        <Link to="/checkout">
         <Button btnType="Success" clicked={this.props.continue}>
           Continue
         </Button>
+        </Link>
       </Aux>
     ) 
   }

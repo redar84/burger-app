@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
-
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
 import Layout from './hoc/Layout/Layout'
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import Checkout from './containers/Checkout/Checkout'
 import { faCheckSquare, faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
+
 library.add(faCheckSquare, faCoffee,faBars)
 class App extends Component {
  
+  
     render(){
     return (
       <div>
       <Layout>
-      <BurgerBuilder/>  
+      <Switch>
+      <Route path="/" component={BurgerBuilder}/>
+      <Route path="/checkout" component={Checkout}/>
+      </Switch>
       </Layout>
       </div>
     );
