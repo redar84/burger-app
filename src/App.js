@@ -6,7 +6,7 @@ import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import Checkout from './containers/Checkout/Checkout'
 import { faCheckSquare, faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
-
+import Orders from './containers/Orders/Orders'
 library.add(faCheckSquare, faCoffee,faBars)
 class App extends Component {
  
@@ -16,8 +16,10 @@ class App extends Component {
       <div>
       <Layout>
       <Switch>
-      <Route path="/" component={BurgerBuilder}/>
+      
       <Route path="/checkout" component={Checkout}/>
+      <Route path="/orders" component={Orders}/>
+      <Route path="/" exact component={BurgerBuilder}/>
       </Switch>
       </Layout>
       </div>
